@@ -31,7 +31,7 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', 
                         validators=[DataRequired()])
     remember = BooleanField('Remember Me')
-    submit = SubmitField('Update')
+    submit = SubmitField('Sign Up')
 
 class UpdateAccountForm(FlaskForm): 
     username = StringField('Username',
@@ -39,7 +39,7 @@ class UpdateAccountForm(FlaskForm):
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
     picture = FileField('Update Your Profile Picture', validators=[FileAllowed(['jpg', 'png'])])
-    submit = SubmitField('Sign Up')
+    submit = SubmitField('Update')
 
     def vaildate_username(self, username): 
         if current_user.username != username.data:
