@@ -9,7 +9,7 @@ body {
   }
   
   .bg-steel {
-    background-color: #5f788a;
+    background-color: #11e9e9;
   }
   
   .site-header .navbar-nav .nav-link {
@@ -78,3 +78,41 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+
+  .nav-user-info {
+    background-color: #ffffff;
+    padding-top: 12px;
+    line-height: 1.4;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 2px 2px 0 0
+}
+
+.nav-user-name {
+  text-align: center;
+}
+
+.nav-user-dropdown {
+  padding: 0px;
+  min-width: 230px;
+  margin: 0px
+}
+
+.nav-user-dropdown .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 12px 22px 15px;
+  clear: both;
+  font-weight: 400;
+  color: #686972;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  font-size: 13px;
+  line-height: 0.4
+}
+
+.nav-user-dropdown .dropdown-item:hover {
+  background-color: #f7f7fb
+}
