@@ -67,6 +67,10 @@ body {
     height: 25px;
     vertical-align: middle;
   }
+
+  .article-icon{
+    color: #4b4949;
+  }
   
   .account-img {
     height: 125px;
@@ -94,7 +98,7 @@ body {
 
 .nav-user-dropdown {
   padding: 0px;
-  min-width: 230px;
+  min-width: 200px;
   margin: 0px
 }
 
