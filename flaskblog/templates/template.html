@@ -24,8 +24,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">
                   <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
-                    <a class="nav-item nav-link" href="{{url_for('about')}}">About</a>
+                    <a class="nav-item nav-link" href="{{url_for('main.home')}}">Home</a>
+                    <a class="nav-item nav-link" href="{{url_for('main.about')}}">About</a>
                   </div>
                   <!-- Navbar Right Side -->
                   <div class="navbar-nav">
@@ -43,18 +43,18 @@
                             <h5 class="nav-user-name">{{current_user.username}}</h5>
                           </div>
                           <hr>
-                          <a class="dropdown-item" href="{{url_for('new_post')}}"><i class="fas fa-pen-square mr-2"></i>Create Post</a>
-                          <a class="dropdown-item" href="{{url_for('account')}}"><i class="fas fa-user mr-2"></i>Account</a>
-                          <a class="dropdown-item" href="{{url_for('logout')}}"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                          <a class="dropdown-item" href="{{url_for('posts.new_post')}}"><i class="fas fa-pen-square mr-2"></i>Create Post</a>
+                          <a class="dropdown-item" href="{{url_for('users.account')}}"><i class="fas fa-user mr-2"></i>Account</a>
+                          <a class="dropdown-item" href="{{url_for('users.logout')}}"><i class="fas fa-power-off mr-2"></i>Logout</a>
                         </div>
                       </li>
                       <!--
-                      <a class="nav-item nav-link" href="{{url_for('account')}}">Account</a>
-                      <a class="nav-item nav-link" href="{{url_for('logout')}}">Logout</a>
+                      <a class="nav-item nav-link" href="{{url_for('users.account')}}">Account</a>
+                      <a class="nav-item nav-link" href="{{url_for('users.logout')}}">Logout</a>
                       -->
                     {% else %}
-                      <a class="nav-item nav-link" href="{{url_for('login')}}">Login</a>
-                      <a class="nav-item nav-link" href="{{url_for('register')}}">Register</a>
+                      <a class="nav-item nav-link" href="{{url_for('users.login')}}">Login</a>
+                      <a class="nav-item nav-link" href="{{url_for('users.register')}}">Register</a>
                     {% endif %}
           
                   </div>
