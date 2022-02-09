@@ -31,11 +31,11 @@
                   <div class="navbar-nav">
                     {% if current_user.is_authenticated %}
                       <li class="nav-item dropdown nav-user">
-                        <a class="nav-link nav-user-img avatar-lightbox" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Userdropdownmenu">
+                        <a class="nav-link nav-user-img " href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="Userdropdownmenu">
                           {% if current_user.image_file != 'default.png' %}
-                            <img class="rounded-circle avatar-lightbox" src="{{url_for('static', filename='profile_img/' + current_user.id|string + '/' + current_user.image_file)}}" height="25"  width="25" alt="Avatar">
+                            <img class="rounded-circle" src="{{url_for('static', filename='profile_img/' + current_user.id|string + '/' + current_user.image_file)}}" height="25"  width="25" alt="Avatar">
                           {% else %}
-                            <img class="rounded-circle avatar-lightbox" src="{{'static\\profile_img\\default.png'}}" height="25" alt="Avatar">
+                            <img class="rounded-circle" src="{{'static\\profile_img\\default.png'}}" height="25" alt="Avatar">
                           {% endif %}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="Userdropdownmenu">
