@@ -11,6 +11,7 @@ users = Blueprint('users', __name__)
 profile_root_path = os.path.join(app.root_path, 'static/profile_img')
 
 @users.route('/register', methods=['GET', 'POST'])
+@login_required
 def register():
     if current_user.is_authenticated:
         return redirect(url_for('main.home'))
